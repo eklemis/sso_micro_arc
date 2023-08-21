@@ -1,0 +1,10 @@
+/Users/ek_solution/BASE/CODES/projects/sso_micro_arc/actix_bridge/target/debug/deps/prost_types-2086e4bd9371f49d.rmeta: /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/lib.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/datetime.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/compiler.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/protobuf.rs
+
+/Users/ek_solution/BASE/CODES/projects/sso_micro_arc/actix_bridge/target/debug/deps/libprost_types-2086e4bd9371f49d.rlib: /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/lib.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/datetime.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/compiler.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/protobuf.rs
+
+/Users/ek_solution/BASE/CODES/projects/sso_micro_arc/actix_bridge/target/debug/deps/prost_types-2086e4bd9371f49d.d: /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/lib.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/datetime.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/compiler.rs /Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/protobuf.rs
+
+/Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/lib.rs:
+/Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/datetime.rs:
+/Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/compiler.rs:
+/Users/ek_solution/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-types-0.11.9/src/protobuf.rs:

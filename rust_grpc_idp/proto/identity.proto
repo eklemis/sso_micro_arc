@@ -1,0 +1,91 @@
+
+syntax = "proto3";
+package identity;
+import "google/protobuf/empty.proto";
+
+message Profile {
+    string username = 1;
+    string password = 2;
+    string email = 3;
+    string fullname = 4;
+    string phone_number = 5;
+    string profile_picture_url = 6;
+}
+message ProfilePublic {
+    string username = 1;
+    string email = 2;
+    string fullname = 3;
+    string phone_number = 4;
+    string profile_picture_url = 5;    
+}
+message Token {
+    string access_token = 1;
+    string refresh_token = 2;
+}
+message TransactionalToken{
+    string token = 1;
+}
+message TokenValidation {
+    bool valid = 1;
+}
+message SessionStatusRequest{
+    string session_id = 1;
+}
+message SessionStatus{
+    bool active = 1;
+}
+
+message Email {
+    string email = 1;
+}
+
+message ResetPasswordReq {
+    string email = 1;
+    string reset_token = 2;
+    string new_password = 3;
+}
+
+message LoginRequest {
+    string email = 1;
+    string password = 2;
+    string url = 3;
+    string ipv4 = 4;
+    string user_agen = 5;
+}
+message AuthorizationCode {
+    string code = 1;
+}
+message LoginResponse {
+    string session_id = 1;
+    AuthorizationCode auth_code = 2;
+    string url = 3;
+}
+message TokenRequest {
+    AuthorizationCode auth_code = 1;
+}
+message LogoutRequest {
+    string access_token = 1;
+}
+
+message MfaCode {
+    string code = 1;
+}
+message Result{
+    bool success = 1;
+}
+
+service AuthenticationService {
+    rpc Register(Profile) returns (TransactionalToken);
+    rpc ValidateAccount(TransactionalToken) returns (TokenValidation);
+    rpc GetProfile(Token) returns (ProfilePublic);
+    rpc Login(LoginRequest) returns (LoginResponse);
+    rpc GetSessionStatus(SessionStatusRequest) returns (SessionStatus);
+    rpc GetToken(TokenRequest) returns (Token);
+    rpc RefreshToken(Token) returns (Token);
+    rpc ValidateToken(Token) returns (TokenValidation);    
+    rpc ForgotPassword(Email) returns (google.protobuf.Empty);
+    rpc ResetPassword(ResetPasswordReq) returns (google.protobuf.Empty);
+    rpc Logout(LogoutRequest) returns (google.protobuf.Empty);
+    rpc SendMfaCode(Token) returns (google.protobuf.Empty); 
+    rpc VerifyMfaCode(MfaCode) returns (google.protobuf.Empty);
+}

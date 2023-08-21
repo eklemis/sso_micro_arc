@@ -1,0 +1,1 @@
+{"rustc":631956316838095215,"features":"","target":0,"profile":0,"path":0,"deps":[[16287681432096833945,"build_script_build",false,17974968844037447336]],"local":[{"RerunIfChanged":{"output":"debug/build/rust_grpc_idp-cdd351078204f8e3/output","paths":["./protos/identity.proto","proto"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

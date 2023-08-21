@@ -1,0 +1,1 @@
+{"rustc":631956316838095215,"features":"","target":0,"profile":0,"path":0,"deps":[[17434705452674288277,"build_script_build",false,13569933307031116538]],"local":[{"RerunIfChanged":{"output":"release/build/actix_bridge-5aed4dcff90ddfa7/output","paths":["./protos/identity.proto","proto"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=proto/identity.proto
+cargo:rerun-if-changed=proto
