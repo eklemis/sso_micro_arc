@@ -111,8 +111,6 @@ pub struct LoginResponse {
 pub struct TokenRequest {
     #[prost(message, optional, tag = "1")]
     pub auth_code: ::core::option::Option<AuthorizationCode>,
-    #[prost(string, tag = "2")]
-    pub email: ::prost::alloc::string::String,
 }
 #[allow(clippy::derive_partial_eq_without_eq)]
 #[derive(Clone, PartialEq, ::prost::Message)]

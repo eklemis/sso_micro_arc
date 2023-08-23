@@ -48,3 +48,23 @@ model UserRole {
   role    Role   @relation(fields: [role_id], references: [id])
   role_id String @db.ObjectId
 }
+
+enum DocType {
+  VIDEO
+  MD_DOC
+  SCREENCAST_PRESENTATION
+  SCREENCAST_CODING
+  QUIZ
+  FORMULIR
+  SURVEY
+}
+
+enum AnswerType {
+  MULTIPLE_CHOICE
+  TRUE_FALSE
+  SHORT_ANSWER
+  MATCHING
+  FILL_BLANKS
+  ESSAY
+  POLL
+}
